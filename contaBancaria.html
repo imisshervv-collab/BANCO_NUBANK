@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="conta-bancaria">
+    <img src="nubank-logo-2.png" alt="Logo Nubank" class="logo">
+    <p class="bem-vindo">Seja bem-vindo</p>
+  <h2>Minha Conta</h2>
+  
+  <div class="saldo">
+    <span>Saldo:</span>
+    <strong id="saldo">R$ 1.000,00</strong>
+  </div>
+
+  <div class="extrato">
+    <h3>Extrato</h3>
+    <ul id="lista-transacoes">
+      <li>+ R$ 500,00 - Depósito</li>
+      <li>- R$ 200,00 - Saque</li>
+    </ul>
+  </div>
+
+  <div class="operacoes">
+    <input type="number" id="valor" placeholder="Valor" />
+    <select id="tipo">
+      <option value="deposito">Depósito</option>
+      <option value="saque">Saque</option>
+    </select>
+    <button onclick="fazerOperacao()">Confirmar</button>
+  </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
-    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <p>NUBANK</p>
-    </div>
-    <div class="limitar">
-        <input type="text">
-        <input type="password">
-    </div>
-    <a href="https://www.flaticon.com/free-icons/letter-n" title="letter n icons">Letter n icons created by rashedul.islam - Flaticon</a>
+    <P>Nubank</P>
+    <img src="nubank-logo-2.png" alt="Logo Nubank" class="logo">
+    <form class="login" action="contaBancaria.html" method="get">
+        <div class="campo">
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario">
+        </div>
+        <div class="campo">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha">
+        </div>
+        <button type="submit">Entrar</button>
+    </form>
+<script src="script.js"></script>
 </body>
 </html>
